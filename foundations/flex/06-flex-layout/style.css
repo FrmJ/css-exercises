@@ -16,6 +16,7 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 16px;
 }
 
 input {
@@ -31,11 +32,20 @@ input {
   height: inherit;
 }
 
-.header {
+.header,
+.footer {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
   padding: 16px;
+}
+
+.header {
+  align-items: flex-start;
+}
+
+.footer {
+  align-items: flex-end;
+  background-color: #eeeeee;
 }
 
 .content {
@@ -45,14 +55,6 @@ input {
   align-items: center;
   justify-content: center;
   gap: 16px;
-}
-
-.footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  padding: 16px;
-  background-color: #eeeeee;
 }
 
 ul {
